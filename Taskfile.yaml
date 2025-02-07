@@ -1,0 +1,6 @@
+version: '3'
+
+tasks:
+  protogen:
+    cmds:
+      - protoc --go_out=. --go-grpc_out=. --proto_path=. notification.proto
